@@ -25,3 +25,30 @@
   "refresh_token": "2wL9E3hX3/onX8k/F/fsPAFF1ziDTPuni3YYQuvVAD0="
 }
 ```
+
+## Проверка различных исходов
+
+### get-tokens с корректными данными (Ok)
+![image](https://github.com/user-attachments/assets/f6bc58ff-d77d-483c-a357-16facdd8ec84)
+
+### get-tokens с некорректным userID (Bad Request)
+![image](https://github.com/user-attachments/assets/dc0568de-1aff-4762-882b-0d45f32e071c)
+
+### refresh с корректными данными (Ok)
+![image](https://github.com/user-attachments/assets/1e9c976f-2835-4607-8231-8a156f17a51c)
+
+### refresh при измененном ip (Warning email на почту)
+![image](https://github.com/user-attachments/assets/a6592232-4c5d-4b8c-b6ae-849b060615a0)
+
+### refresh при измененном с некорректным Access токеном (Unauthorized)
+![image](https://github.com/user-attachments/assets/b71a562e-c79f-4745-bdd5-334bdeaae4b3)
+
+### refresh при измененном с некорректным Refresh токеном (Unauthorized)
+![image](https://github.com/user-attachments/assets/3b7bd7f8-5169-4317-bc05-e2c1847d4bff)
+
+### refresh без одного из токенов (Bad Request)
+![image](https://github.com/user-attachments/assets/46acf247-20dc-4041-b2cf-fae51789c27a)
+
+
+
+
